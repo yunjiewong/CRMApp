@@ -1,0 +1,12 @@
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/Antra.CRMApp.Core.csproj.AssemblyReference.cache
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/Antra.CRMApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/Antra.CRMApp.Core.AssemblyInfoInputs.cache
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/Antra.CRMApp.Core.AssemblyInfo.cs
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/Antra.CRMApp.Core.csproj.CoreCompileInputs.cache
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/bin/Debug/net6.0/Antra.CRMApp.Core.deps.json
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/bin/Debug/net6.0/Antra.CRMApp.Core.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/bin/Debug/net6.0/Antra.CRMApp.Core.pdb
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/Antra.CRMApp.Core.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/refint/Antra.CRMApp.Core.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/Antra.CRMApp.Core.pdb
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/Debug/net6.0/ref/Antra.CRMApp.Core.dll
