@@ -8452,11 +8452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yunjiewang/CRMApp/Antra.CRMApp.WebMVC/Antra.CRMApp.WebMVC.csproj",
+      "projectUniqueName": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Antra.CRMApp.WebMVC.csproj",
       "projectName": "Antra.CRMApp.WebMVC",
-      "projectPath": "/Users/yunjiewang/CRMApp/Antra.CRMApp.WebMVC/Antra.CRMApp.WebMVC.csproj",
+      "projectPath": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Antra.CRMApp.WebMVC.csproj",
       "packagesPath": "/Users/yunjiewang/.nuget/packages/",
-      "outputPath": "/Users/yunjiewang/CRMApp/Antra.CRMApp.WebMVC/obj/",
+      "outputPath": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yunjiewang/.nuget/NuGet/NuGet.Config"
@@ -8471,8 +8471,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/yunjiewang/CRMApp/Antra.CRMApp.Infrastructure/Antra.CRMApp.Infrastructure.csproj": {
-              "projectPath": "/Users/yunjiewang/CRMApp/Antra.CRMApp.Infrastructure/Antra.CRMApp.Infrastructure.csproj"
+            "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Infrastructure/Antra.CRMApp.Infrastructure.csproj": {
+              "projectPath": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Infrastructure/Antra.CRMApp.Infrastructure.csproj"
             }
           }
         }

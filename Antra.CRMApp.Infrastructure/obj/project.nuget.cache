@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7L1YvBhzrC6ZeIK9cEGFOyQE8sPZllzzo7KMxpin/AW54D7pkG0Um0wPbz1+1+E4Yy1b50ABVC/3Ch9/9JYHVg==",
+  "dgSpecHash": "pvc+N4gYw8jmUjnryFShWpaHsz2KqET0TIclDMcXqX4V5vBJBIa0T7S/QczgqQP86rUc48ywVQMmYdzB+1aSUQ==",
   "success": true,
-  "projectFilePath": "/Users/yunjiewang/CRMApp/Antra.CRMApp.Infrastructure/Antra.CRMApp.Infrastructure.csproj",
+  "projectFilePath": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Infrastructure/Antra.CRMApp.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/yunjiewang/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/yunjiewang/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{C4FA4A07-6175-40B4-8C74-A37E8C6AEDA6}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Antra.CRMApp.WebMVC/Controllers/EmployeeController.cs">
+    <Files>
+      <File FileName="Antra.CRMApp.WebMVC/Controllers/EmployeeController.cs" Line="46" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CRMApp" expanded="True">
+            <Node name="Antra.CRMApp.Core" expanded="True" />
+            <Node name="Antra.CRMApp.Infrastructure" expanded="True">
+              <Node name="Migrations" selected="True" />
+              <Node name="Service" expanded="True" />
+            </Node>
+            <Node name="Antra.CRMApp.WebMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Employee" expanded="True" />
+                <Node name="Region" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Antra.CRMApp.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

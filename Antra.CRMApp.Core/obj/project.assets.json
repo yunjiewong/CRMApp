@@ -529,11 +529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yunjiewang/CRMApp/Antra.CRMApp.Core/Antra.CRMApp.Core.csproj",
+      "projectUniqueName": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/Antra.CRMApp.Core.csproj",
       "projectName": "Antra.CRMApp.Core",
-      "projectPath": "/Users/yunjiewang/CRMApp/Antra.CRMApp.Core/Antra.CRMApp.Core.csproj",
+      "projectPath": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/Antra.CRMApp.Core.csproj",
       "packagesPath": "/Users/yunjiewang/.nuget/packages/",
-      "outputPath": "/Users/yunjiewang/CRMApp/Antra.CRMApp.Core/obj/",
+      "outputPath": "/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yunjiewang/.nuget/NuGet/NuGet.Config"

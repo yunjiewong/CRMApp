@@ -24,4 +24,16 @@
     <ProjectReference Include="..\Antra.CRMApp.Infrastructure\Antra.CRMApp.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Category\" />
+    <None Remove="Views\Customer\" />
+    <None Remove="Views\Order\" />
+    <None Remove="Views\Shipper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Category\" />
+    <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Order\" />
+    <Folder Include="Views\Shipper\" />
+  </ItemGroup>
 </Project>
