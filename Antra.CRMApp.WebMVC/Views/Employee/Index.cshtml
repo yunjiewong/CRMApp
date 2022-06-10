@@ -1,0 +1,17 @@
+﻿@model IEnumerable<EmployeeResponseModel>
+
+
+
+
+
+<a asp-action="Create" asp-controller="Employee" class="bg-success btn">Add Employee</a>
+<div class="container">
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <partial name="_EmployeeCard" model="@item"></partial>
+    }
+
+</div>
+</div>
+
