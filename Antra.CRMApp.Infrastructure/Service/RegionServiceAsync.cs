@@ -41,5 +41,32 @@ namespace Antra.CRMApp.Infrastructure.Service
             }
             return null;
         }
+
+        public async Task<int> DeleteRegionAsync(int id)
+        {
+            return await regionRepositoryAsync.DeleteAsync(id);
+        }
+
+        public async Task<int> UpdateRegionAsync(RegionModel model)
+        {
+            Region region = new Region();
+            region.Name = model.Name;
+            region.Id = model.Id;
+            
+            return await regionRepositoryAsync.UpdateAsync(region);
+;        }
+
+        public async Task<RegionModel> GetByIdAsync(int id)
+        {
+            var item = await regionRepositoryAsync.GetByIdAsync(id);
+            if (item!= null)
+            {
+                RegionModel model = new RegionModel();
+                model.Id = item.Id;
+                model.Name = item.Name;
+                return model;
+            }
+            return null;
+        }
     }
 }

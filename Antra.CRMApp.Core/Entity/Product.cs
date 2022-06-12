@@ -21,7 +21,7 @@ namespace Antra.CRMApp.Core.Entity
 
         [Required]
         public int QuantityPerUnit { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(18,2)")]
         public decimal UnitPrice { get; set; }
         [Required]
         public int UnitsInStock { get; set; }
@@ -32,7 +32,6 @@ namespace Antra.CRMApp.Core.Entity
         [Required]
         public bool Discontinued { get; set; }
 
-        public Vendor Vendor { get; set; }
 
         public Category Category { get; set; }
     }

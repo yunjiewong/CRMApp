@@ -1,13 +1,15 @@
 ﻿@model RegionModel
+<h1>Create a new Region</h1>
 <form asp-action="Create" asp-controller="Region" method="post">
     <div class="container">
         <div class="row">
             <div class="col mb-5">
                 <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control"/>
+                <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
         </div>
-        <input type="submit" class="btn-primary btn" value="Create Region"/>
+        <input type="submit" class="btn-primary btn" value="Create Region" />
+        <a asp-action="Index" asp-controller="Region" class="bg-success btn">Back to Region Page</a>
     </div>
 </form>

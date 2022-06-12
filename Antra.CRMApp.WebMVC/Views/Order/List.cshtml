@@ -1,0 +1,41 @@
+﻿@model IEnumerable<OrderResponseModel>
+
+<h1>Order List</h1>
+
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">ProductId</th>
+            <th scope="col">UnitPrice</th>
+            <th scope="col">Discount</th>
+
+            <th scope="col">quantity</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+
+        @{
+
+            foreach (var m in Model)
+            {
+                <tr>
+                    <td>@m.Id</td>
+                    <td>@m.ProductId</td>
+                    <td>@m.UnitPrice</td>
+                    <td>@m.Discount</td>
+
+                    <td>@m.quantity</td>
+                   
+                </tr>
+            }
+        }
+
+
+    </tbody>
+</table>
+
+
+<a asp-action="Index" asp-controller="Order" class="bg-success btn">Back to Order Page</a>

@@ -8,10 +8,11 @@
     
     
         <div class="container">
-            <di class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Employee Updated Successfully. Go to <a asp-action="Index" asp-controller="Employee" >Index</a> </strong>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Employee Updated Successfully. Go to <a asp-action="Index" asp-controller="Employee">Index</a> </strong>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+        </div>
 }
 
 
@@ -133,6 +134,9 @@
     <div class="row">
         <div class="col">
             <input type="submit" value="Edit Employee" class="btn btn-primary" />
+        </div>
+        <div class="col">
+            <a asp-action="Index" asp-controller="Employee" class="bg-success btn">Back to Employee Page</a>
         </div>
     </div>
 </div>

@@ -1,6 +1,49 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<CustomerResponseModel>
+
+<h1>Customer index</h1>
+
+<a asp-action="Create" asp-controller="Customer" class="bg-success btn">Add Customer</a>
+<a asp-action="List" asp-controller="Customer" class="bg-primary btn">Customer List</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Region Id</th>
+            <th>City</th>
+            <th>Option</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Name</td>
+                    <td>@p.Phone</td>
+                    <td>@p.RegionId</td>
+                    <td>@p.City</td>
+                    <td>
+                        <span>
+
+                            <a asp-controller="Customer" asp-action="Edit" asp-route-id="@p.Id">Edit</a>
+                        </span>
+                    </td>
+                    <td>
+                        <span>
+
+                            <a asp-controller="Customer" asp-action="Delete" asp-route-id="@p.Id">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+
+
+
+            }
+        }
+    </tbody>
+</table>
 

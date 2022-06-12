@@ -1,0 +1,21 @@
+﻿@model ShipperModel
+<h1>Create a new Shipper</h1>
+<form asp-action="Create" asp-controller="Shipper" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col mb-5">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="col mb-5">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+        </div>
+        <input type="submit" class="btn-primary btn" value="Create Shipper" />
+        <a asp-action="Index" asp-controller="Shipper" class="bg-success btn">Back to Shipper Page</a>
+
+    </div>
+</form>

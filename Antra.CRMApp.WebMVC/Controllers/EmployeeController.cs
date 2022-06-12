@@ -78,9 +78,19 @@ namespace Antra.CRMApp.WebMVC.Controllers
          return RedirectToAction("Index");
         }
 
-        [NonAction]
-        public void Demo()
-        { 
+        
+        public async Task<IActionResult> Details(int id)
+        {
+            var model = await employeeServiceAsync.GetByIdAsync(id);
+            return View(model);
+        }
+
+        public async Task<IActionResult> List()
+        {
+            var model = await employeeServiceAsync.GetAllAsync();
+         
+           
+            return View(model);
         }
 
 

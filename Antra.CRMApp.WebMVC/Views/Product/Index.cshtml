@@ -1,35 +1,49 @@
-﻿<!--index.cshtml is a razor view...
-    razor is a viewengine, it will convert the C# code to 
-    the script code which a browser can understand
--->
-@model IEnumerable<Product>
+﻿
+@model IEnumerable<ProductResponseModel>
+
 <h1>Product index</h1>
+
+<a asp-action="Create" asp-controller="Product" class="bg-success btn">Add Product</a>
+<a asp-action="List" asp-controller="Product" class="bg-primary btn">Product List</a>
+
 <table class="table">
     <thead>
         <tr>
             <th>Id</th>
             <th>Name</th>
-            <th>Color</th>
-            <th>Price</th>
+            <th>category ID</th>
+            <th>Discontinued</th>
+            <th>QuantityPerUnit</th>
+
             <th>Option</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
         @{
-            foreach(var p in Model)
+            foreach (var p in Model)
             {
-               <tr>
-               <td>@p.Id</td>
-               <td>@p.Name</td>
-               <td>@p.Color</td>
-               <td>@p.Price</td>
-               <td>
-               <span>
-                   @*<a href="/product/edit/@p.Id"></a>*@
-               <a asp-controller="Product" asp-action="Edit" asp-route-id="@p.Id" >Edit</a>
-               </span>
-               </td>
-               </tr> 
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.Name</td>
+                    <td>@p.CategoryId</td>
+                    <td>@p.Discontinued</td>
+                    <td>@p.QuantityPerUnit</td>
+                    <td>
+                        <span>
+
+                            <a asp-controller="Product" asp-action="Edit" asp-route-id="@p.Id">Edit</a>
+                        </span>
+                    </td>
+                    <td>
+                        <span>
+
+                            <a asp-controller="Product" asp-action="Delete" asp-route-id="@p.Id">Delete</a>
+                        </span>
+                    </td>
+                </tr>
+
+
 
             }
         }

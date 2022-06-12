@@ -1,52 +1,91 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Antra.CRMApp.WebMVC.Models;
+using Antra.CRMApp.Core.Contract.Service;
+using Antra.CRMApp.Core.Model;
+using Microsoft.AspNetCore.Mvc.Rendering;
 namespace Antra.CRMApp.WebMVC.Controllers
 {
     public class ProductController : Controller
     {
-        public IActionResult Index()
+        private readonly IProductServiceAsync productServiceAsync;
+        private readonly ICategoryServiceAsync categoryServiceAsync;
+        public ProductController(IProductServiceAsync _productServiceAsync, ICategoryServiceAsync _categoryServiceAsync)
         {
-            List<Product> products = new List<Product>();
-            products.Add(new Product() { Id=1, Name="Laptop", Color="Silver", Price=2000});
-            products.Add(new Product() { Id = 2, Name = "Iphone", Color = "Black", Price = 1000 });
-            products.Add(new Product() { Id = 3, Name = "Samsung Galaxy", Color = "Blue", Price = 900 });
-            products.Add(new Product() { Id = 4, Name = "Chair", Color = "Wooden", Price = 120 });
-            products.Add(new Product() { Id = 5, Name = "Table", Color = "White", Price = 250 });
 
-            ViewData["Title"] = "Product/Index";
-
-            //pass view model
-            return View(products);
+            productServiceAsync = _productServiceAsync;
+            categoryServiceAsync = _categoryServiceAsync;
         }
-        public IActionResult Detail()
+
+        public async Task<IActionResult> Index()
         {
-            ViewData["Title"] = "Product/Details";
-            return View("explain");
+            var empCollection = await productServiceAsync.GetAllAsync();
+            if (empCollection != null)
+                return View(empCollection);
+
+            List<ProductResponseModel> model = new List<ProductResponseModel>();
+            return View(model);
         }
 
         [HttpGet]
-        //load the view
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var collection = await categoryServiceAsync.GetAllAsync();
+            ViewBag.Category = new SelectList(collection, "Id","Name");
+
             return View();
         }
 
-
         [HttpPost]
-        //store the data
-        public IActionResult Create(Product product)
+        public async Task<IActionResult> Create(ProductRequestModel model)
         {
             if (ModelState.IsValid)
             {
+                await productServiceAsync.AddProductAsync(model);
                 return RedirectToAction("Index");
             }
-            return View(product);
-            
+            var collection = await categoryServiceAsync.GetAllAsync();
+            ViewBag.Category = new SelectList(collection, "Id","Name");
+            return View(model);
         }
 
-        public IActionResult Edit(int id)
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
         {
-            return View();
+            await productServiceAsync.DeleteProductAsync(id);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            ViewBag.IsEdit = false;
+            var empModel = await productServiceAsync.GetProductForEditAsync(id);
+            var collection = await categoryServiceAsync.GetAllAsync();
+            ViewBag.Category = new SelectList(collection, "Id", "Name");
+            return View(empModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(ProductRequestModel model)
+        {
+            ViewBag.IsEdit = false;
+            var collection = await categoryServiceAsync.GetAllAsync();
+            ViewBag.Category = new SelectList(collection, "Id", "Name");
+            if (ModelState.IsValid)
+            {
+                await productServiceAsync.UpdateProductAsync(model);
+                ViewBag.IsEdit = true;
+
+            }
+
+            return View(model);
+        }
+
+
+        public async Task<IActionResult> List()
+        {
+            var model = await productServiceAsync.GetAllAsync();
+            return View(model);
         }
     }
 }

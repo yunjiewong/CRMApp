@@ -22,14 +22,17 @@ namespace Antra.CRMApp.Core.Model
 
         [Required]
         public int QuantityPerUnit { get; set; }
-        [Required]
+
+        [Required, Column(TypeName = "decimal(18,2)")]
         public decimal UnitPrice { get; set; }
+
         [Required]
         public int UnitsInStock { get; set; }
         [Required]
         public int UnitsOnOrder { get; set; }
         [Required]
         public int ReorderLevel { get; set; }
+
         [Required]
         public bool Discontinued { get; set; }
     }

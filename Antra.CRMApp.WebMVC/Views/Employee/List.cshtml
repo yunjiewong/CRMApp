@@ -1,0 +1,44 @@
+﻿@model IEnumerable<EmployeeResponseModel>
+
+<h1>Employee List</h1>
+
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Employee FullName</th>
+            <th scope="col">City</th>
+            <th scope="col">Title</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @{
+
+            foreach (var m in Model)
+            {
+                <tr>
+                    <td>@m.Id</td>
+                    <td>@m.FullName</td>
+                    <td>@m.City</td>
+                    <td>@m.Title</td>
+                    <td>@m.Phone</td>
+                    
+                    <td>
+                        <span>
+                            <a asp-controller="Employee" asp-action="Details" asp-route-id="@m.Id">Details</a>
+                        </span>
+                    </td>
+                </tr>
+            }
+        }
+
+
+    </tbody>
+</table>
+
+
+<a asp-action="Index" asp-controller="Employee" class="bg-success btn">Back to Employee Page</a>

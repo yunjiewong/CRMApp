@@ -15,16 +15,44 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Category/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Customer/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Employee/Edit.cshtml]
@@ -35,6 +63,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Employee/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWUvTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -43,8 +75,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Order/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Product/Create.cshtml]
@@ -55,20 +99,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Product/explain.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9leHBsYWluLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Product/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9MaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Region/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9uL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Region/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9uL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Region/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9uL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Region/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaW9uL0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Shared/Error.cshtml]
@@ -91,8 +143,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Shipper/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcHBlci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Shipper/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcHBlci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Shipper/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcHBlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/Shipper/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcHBlci9MaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/Views/_ViewImports.cshtml]

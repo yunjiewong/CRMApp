@@ -2,9 +2,18 @@
 
 
 
+<h1>Employee Index</h1>
+<table>
+    <tr>
+        <td>
+            <a asp-action="Create" asp-controller="Employee" class="bg-success btn">Add Employee</a>
+        </td>
+        <td>
+            <a asp-action="List" asp-controller="Employee" class="bg-primary btn">Employee List</a>
+        </td>
+    </tr>
+</table>
 
-
-<a asp-action="Create" asp-controller="Employee" class="bg-success btn">Add Employee</a>
 <div class="container">
 <div class="row">
     @foreach (var item in Model)

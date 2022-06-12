@@ -1,0 +1,48 @@
+﻿@model OrderRequestModel
+
+<form asp-controller="Order" asp-action="Create" method="post">
+
+    <h1 class="display-6">Add New Order</h1>
+    <hr />
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div class="mb-4">
+                    <label asp-for="ProductId"></label>
+                    <select asp-for="ProductId" class="form-control" asp-items="ViewBag.Product">
+                        <option value="">Select a Product</option>
+                    </select>
+                    <span asp-validation-for="ProductId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="mb-4">
+                    <label asp-for="UnitPrice"></label>
+                    <input asp-for="UnitPrice" class="form-control" />
+                    <span asp-validation-for="UnitPrice" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="mb-4">
+                    <label asp-for="quantity"></label>
+                    <input asp-for="quantity" class="form-control" />
+                    <span asp-validation-for="quantity" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col">
+                    <input type="submit" value="Add Order" class="btn btn-primary" />
+                </div>
+                <div class="col">
+                    <a asp-action="Index" asp-controller="Order" class="bg-success btn">Back to Order Page</a>
+                </div>
+            </div>
+
+    </div>
+</form>

@@ -13,6 +13,10 @@ builder.Services.AddSqlServer<CrmDbContext>(builder.Configuration.GetConnectionS
 builder.Services.AddScoped<IEmployeeRepositoryAsync, EmployeeRepositoryAsync>();
 builder.Services.AddScoped<IRegionRepositoryAsync, RegionRepositoryAsync>();
 builder.Services.AddScoped<IProductRepositoryAsync, ProductRepositoryAsync>();
+builder.Services.AddScoped<ICategoryRepositoryAsync, CategoryRepositoryAsync>();
+builder.Services.AddScoped<IShipperRepositoryAsync, ShipperRepositoryAsync>();
+builder.Services.AddScoped<IOrderRepositoryAsync, OrderRepositoryAsync>();
+builder.Services.AddScoped<ICustomerRepositoryAsync, CustomerRepositoryAsync>();
 
 //when the object of interface is required, it will auto get the object of class
 //without new, loosely coupled code
@@ -23,6 +27,10 @@ builder.Services.AddScoped<IProductRepositoryAsync, ProductRepositoryAsync>();
 builder.Services.AddScoped<IEmployeeServiceAsync, EmployeeServiceAsync>();
 builder.Services.AddScoped<IRegionServiceAsync, RegionServiceAsync>();
 builder.Services.AddScoped<IProductServiceAsync, ProductServiceAsync>();
+builder.Services.AddScoped<ICategoryServiceAsync, CategoryServiceAsync>();
+builder.Services.AddScoped<IShipperServiceAsync, ShipperServiceAsync>();
+builder.Services.AddScoped<IOrderServiceAsync, OrderServiceAsync>();
+builder.Services.AddScoped<ICustomerServiceAsync, CustomerServiceAsync>();
 
 var app = builder.Build();
 
@@ -67,4 +75,5 @@ app.MapControllerRoute(
 //app.Run(async context => {
 //    await context.Response.WriteAsync("this is run middlware");
 //});
+
 app.Run();
