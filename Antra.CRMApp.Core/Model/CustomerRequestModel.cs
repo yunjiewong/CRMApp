@@ -39,7 +39,7 @@ namespace Antra.CRMApp.Core.Model
             [MaxLength(15)]
             public string Phone { get; set; }
 
-            public Region Region { get; set; }
+            public RegionModel? Region { get; set; }
     }
 }
 

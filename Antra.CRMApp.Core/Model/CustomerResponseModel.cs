@@ -19,7 +19,7 @@ namespace Antra.CRMApp.Core.Model
 		public string City { get; set; }
 
 		public int RegionId { get; set; }
-		public Region Region { get; set; }
+		public RegionModel Region { get; set; }
 
 		[Required, Column(TypeName = "varchar")]
 		[MaxLength(15)]

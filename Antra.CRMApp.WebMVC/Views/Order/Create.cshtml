@@ -35,14 +35,22 @@
                 </div>
             </div>
         </div>
-            <div class="row">
-                <div class="col">
-                    <input type="submit" value="Add Order" class="btn btn-primary" />
-                </div>
-                <div class="col">
-                    <a asp-action="Index" asp-controller="Order" class="bg-success btn">Back to Order Page</a>
+        <div class="row">
+            <div class="col">
+                <div class="mb-4">
+                    <label asp-for="Discount"></label>
+                    <input asp-for="Discount" class="form-control" />
+                    <span asp-validation-for="Discount" class="text-danger"></span>
                 </div>
             </div>
+        <div class="row">
+            <div class="col">
+                <input type="submit" value="Add Order" class="btn btn-primary" />
+            </div>
+            <div class="col">
+                <a asp-action="Index" asp-controller="Order" class="bg-success btn">Back to Order Page</a>
+            </div>
+        </div>
 
     </div>
 </form>

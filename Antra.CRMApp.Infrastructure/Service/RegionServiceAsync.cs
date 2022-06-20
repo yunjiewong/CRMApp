@@ -19,9 +19,13 @@ namespace Antra.CRMApp.Infrastructure.Service
         }
         public async Task<int> AddRegionAsync(RegionModel model)
         {
-            Region region = new Region();
-            region.Name = model.Name;
-         return await  regionRepositoryAsync.InsertAsync(region);
+            if (model != null)
+            {
+                Region region = new Region();
+                region.Name = model.Name;
+                return await regionRepositoryAsync.InsertAsync(region);
+            }
+            return 0;
         }
 
         public async Task<IEnumerable<RegionModel>> GetAllAsync()
@@ -54,7 +58,7 @@ namespace Antra.CRMApp.Infrastructure.Service
             region.Id = model.Id;
             
             return await regionRepositoryAsync.UpdateAsync(region);
-;        }
+        }
 
         public async Task<RegionModel> GetByIdAsync(int id)
         {

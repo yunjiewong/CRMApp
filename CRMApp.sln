@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.CRMApp.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.CRMApp.Core", "Antra.CRMApp.Core\Antra.CRMApp.Core.csproj", "{F157F163-03D0-4031-9E4C-72A876AB07BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Antra.CRMApp.WebAPI", "Antra.CRMApp.WebAPI\Antra.CRMApp.WebAPI.csproj", "{ED0759B2-5EDA-46A9-A400-402BDF3ABD15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F157F163-03D0-4031-9E4C-72A876AB07BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F157F163-03D0-4031-9E4C-72A876AB07BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F157F163-03D0-4031-9E4C-72A876AB07BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0759B2-5EDA-46A9-A400-402BDF3ABD15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0759B2-5EDA-46A9-A400-402BDF3ABD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0759B2-5EDA-46A9-A400-402BDF3ABD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0759B2-5EDA-46A9-A400-402BDF3ABD15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

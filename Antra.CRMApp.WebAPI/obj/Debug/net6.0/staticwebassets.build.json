@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "No1ImO1Y77NLdoyuNPcFlaSI80evWSgOCu84LD4mU9c=",
+  "Source": "Antra.CRMApp.WebAPI",
+  "BasePath": "_content/Antra.CRMApp.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
