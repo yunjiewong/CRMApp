@@ -1,22 +1,24 @@
-﻿<Properties StartupConfiguration="{C4FA4A07-6175-40B4-8C74-A37E8C6AEDA6}|Default">
-  <MonoDevelop.Ide.ItemProperties.Antra.CRMApp.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.Antra.CRMApp.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Antra.CRMApp.WebMVC/Controllers/CustomerController.cs">
+﻿<Properties StartupConfiguration="{ED0759B2-5EDA-46A9-A400-402BDF3ABD15}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Antra.CRMApp.WebAPI/Program.cs">
     <Files>
-      <File FileName="Antra.CRMApp.WebMVC/Controllers/CustomerController.cs" Line="40" Column="23" />
-      <File FileName="Antra.CRMApp.Core/Model/CustomerRequestModel.cs" Line="24" Column="30" />
+      <File FileName="Antra.CRMApp.WebAPI/Controllers/ValuesController.cs" Line="17" Column="18" />
+      <File FileName="Antra.CRMApp.WebAPI/Program.cs" Line="59" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CRMApp" expanded="True">
             <Node name="Antra.CRMApp.Core" expanded="True">
-              <Node name="Model" expanded="True" />
+              <Node name="Contract" expanded="True">
+                <Node name="Service" expanded="True" />
+              </Node>
+              <Node name="Entity" expanded="True" />
+            </Node>
+            <Node name="Antra.CRMApp.WebAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
             <Node name="Antra.CRMApp.WebMVC" expanded="True">
-              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Order" expanded="True" />
               </Node>
@@ -30,8 +32,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Antra.CRMApp.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Antra.CRMApp.WebMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/Controllers/AccountController.cs" relfile="Antra.CRMApp.WebAPI/Controllers/AccountController.cs" line="27" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

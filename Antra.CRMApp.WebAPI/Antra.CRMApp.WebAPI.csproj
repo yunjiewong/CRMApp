@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
     <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +27,8 @@
     <None Remove="Middleware\" />
     <None Remove="Serilog.AspNetCore" />
     <None Remove="Serilog.Settings.Configuration" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Middleware\" />

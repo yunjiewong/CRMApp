@@ -72,3 +72,10 @@
 /Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Serilog.Sinks.Debug.dll
 /Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Serilog.Sinks.File.dll
 /Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Users/yunjiewang/Desktop/CRMApp/LogException/log.json
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/LogException/log.json
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

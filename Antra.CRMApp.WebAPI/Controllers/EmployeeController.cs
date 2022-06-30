@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Antra.CRMApp.Core.Contract.Service;
 using Antra.CRMApp.Core.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Antra.CRMApp.WebAPI.Controllers
 {
     [Route("api/[controller]")]
+ 
     public class EmployeeController : Controller
     {
         private readonly IEmployeeServiceAsync employeeServiceAsync;
@@ -27,17 +29,31 @@ namespace Antra.CRMApp.WebAPI.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        [Route("{id:int}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            var result = await employeeServiceAsync.GetByIdAsync(id);
+            if (result == null)
+                return NotFound($"Employee With ID = {id} is not available");
+
+            return Ok(result);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]EmployeeRequestModel model)
         {
             var result = await employeeServiceAsync.AddEmployeeAsync(model);
             if (result > 0)
-                return Ok(model);
+            {
+                var response = new { msg = model };
+                return Ok(response);
+            }
             return BadRequest();
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put(EmployeeRequestModel model)
+        public async Task<IActionResult> Put([FromBody] EmployeeRequestModel model)
         {
             var result = await employeeServiceAsync.UpdateEmployeeAsync(model);
             if (result > 0)

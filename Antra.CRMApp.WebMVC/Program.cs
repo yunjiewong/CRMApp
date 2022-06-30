@@ -3,6 +3,8 @@ using Antra.CRMApp.Core.Contract.Service;
 using Antra.CRMApp.Infrastructure.Service;
 using Antra.CRMApp.Infrastructure.Data;
 using Antra.CRMApp.Infrastructure.Repository;
+using Antra.CRMApp.Core.Entity;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 //dependency injection for repository
 builder.Services.AddControllersWithViews();
 builder.Services.AddSqlServer<CrmDbContext>(builder.Configuration.GetConnectionString("OnlineCRM"));
+
+
 builder.Services.AddScoped<IEmployeeRepositoryAsync, EmployeeRepositoryAsync>();
 builder.Services.AddScoped<IRegionRepositoryAsync, RegionRepositoryAsync>();
 builder.Services.AddScoped<IProductRepositoryAsync, ProductRepositoryAsync>();
@@ -17,7 +21,7 @@ builder.Services.AddScoped<ICategoryRepositoryAsync, CategoryRepositoryAsync>();
 builder.Services.AddScoped<IShipperRepositoryAsync, ShipperRepositoryAsync>();
 builder.Services.AddScoped<IOrderRepositoryAsync, OrderRepositoryAsync>();
 builder.Services.AddScoped<ICustomerRepositoryAsync, CustomerRepositoryAsync>();
-
+//builder.Services.AddScoped<IAccountRepositoryAsync, AccountRepositoryAsync>();
 //when the object of interface is required, it will auto get the object of class
 //without new, loosely coupled code
 //unit test cases,not hard coding 
@@ -31,6 +35,8 @@ builder.Services.AddScoped<ICategoryServiceAsync, CategoryServiceAsync>();
 builder.Services.AddScoped<IShipperServiceAsync, ShipperServiceAsync>();
 builder.Services.AddScoped<IOrderServiceAsync, OrderServiceAsync>();
 builder.Services.AddScoped<ICustomerServiceAsync, CustomerServiceAsync>();
+//builder.Services.AddScoped<IAccountServiceAsync, AccountServiceAsync>();
+
 
 var app = builder.Build();
 

@@ -17,19 +17,25 @@ namespace Antra.CRMApp.Infrastructure.Service
 
         public async Task<int> AddProductAsync(ProductRequestModel model)
         {
-            Product product = new Product();
-            product.Id = model.Id;
-            product.Name = model.Name;
-            product.QuantityPerUnit = model.QuantityPerUnit;
-            product.ReorderLevel = model.ReorderLevel;
-            product.SupplierId = model.SupplierId;
-            product.CategoryId = model.CategoryId;
-            product.Discontinued = model.Discontinued;
-            product.UnitPrice = model.UnitPrice;
-            product.UnitsInStock = model.UnitsInStock;
-            product.UnitsOnOrder = model.UnitsOnOrder;
-            return await repositoryAsync.InsertAsync(product);
+            if(model!= null)
+            {
+                Product product = new Product();
+                product.Id = model.Id;
+                product.Name = model.Name;
+                product.QuantityPerUnit = model.QuantityPerUnit;
+                product.ReorderLevel = model.ReorderLevel;
+                product.SupplierId = model.SupplierId;
+                product.CategoryId = model.CategoryId;
+                product.Discontinued = model.Discontinued;
+                product.UnitPrice = model.UnitPrice;
+                product.UnitsInStock = model.UnitsInStock;
+                product.UnitsOnOrder = model.UnitsOnOrder;
+                return await repositoryAsync.InsertAsync(product);
+            }
+
+            return 0;
         }
+            
 
         public async Task<int> DeleteProductAsync(int id)
         {

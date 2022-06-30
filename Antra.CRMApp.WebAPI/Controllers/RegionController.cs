@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Antra.CRMApp.Core.Contract.Service;
 using Antra.CRMApp.Core.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Antra.CRMApp.WebAPI.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     public class RegionController : Controller
     {
         private readonly IRegionServiceAsync regionServiceAsync;
@@ -23,7 +25,7 @@ namespace Antra.CRMApp.WebAPI.Controllers
         public async Task<IActionResult> Get()
         {
             //throw new NotImplementedException("This method is not Implemented! ");
-            throw new Exception("custom exception");
+            //throw new Exception("custom exception");
             return Ok(await regionServiceAsync.GetAllAsync());
         }
 
@@ -62,7 +64,11 @@ namespace Antra.CRMApp.WebAPI.Controllers
         {
             var result = await regionServiceAsync.DeleteRegionAsync(id);
             if (result > 0)
-                return Ok("Region Delete Successfully!");
+            {
+                var response = new { Message = "Region Delete Successfully!" };
+                return Ok(response);
+            }
+                
             return BadRequest();
         }
 

@@ -38,9 +38,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [
@@ -100,13 +104,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.5, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [
@@ -166,6 +178,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.6, )"
@@ -184,7 +204,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [

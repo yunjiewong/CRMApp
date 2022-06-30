@@ -22,7 +22,8 @@ namespace Antra.CRMApp.WebAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await serviceAsync.GetAllAsync());
+            var result = await serviceAsync.GetAllAsync();
+            return Ok(result);
         }
 
         [HttpGet]
@@ -30,23 +31,27 @@ namespace Antra.CRMApp.WebAPI.Controllers
         public async Task<IActionResult> Get(int id)
         {
             var result = await serviceAsync.GetByIdAsync(id);
+            var msg = $"Region With ID = {id} is not available";
             if (result == null)
-                return NotFound($"Region With ID = {id} is not available");
+                return NotFound(msg);
 
             return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]ProductRequestModel model)
+        public async Task<IActionResult> Post([FromBody] ProductRequestModel model)
         {
             var result = await serviceAsync.AddProductAsync(model);
             if (result > 0)
-                return Ok(model);
+            {
+                var response = new { msg = model };
+                return Ok(response);
+            }
             return BadRequest();
         }
 
         [HttpPut]
-        public async Task<IActionResult> Put(ProductRequestModel model)
+        public async Task<IActionResult> Put([FromBody]ProductRequestModel model)
         {
             var result = await serviceAsync.UpdateProductAsync(model);
             if (result > 0)
@@ -59,11 +64,12 @@ namespace Antra.CRMApp.WebAPI.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var result = await serviceAsync.DeleteProductAsync(id);
+            var response = new { Message = "Region Delete Successfully!" };
             if (result > 0)
-                return Ok("Region Delete Successfully!");
+                return Ok(response);
             return BadRequest();
         }
-
+        
     }
 }
 

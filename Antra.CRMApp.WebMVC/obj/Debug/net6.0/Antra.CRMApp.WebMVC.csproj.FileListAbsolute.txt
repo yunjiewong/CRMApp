@@ -148,3 +148,8 @@
 /Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/obj/Debug/net6.0/Antra.CRMApp.WebMVC.pdb
 /Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/obj/Debug/net6.0/Antra.CRMApp.WebMVC.genruntimeconfig.cache
 /Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/obj/Debug/net6.0/ref/Antra.CRMApp.WebMVC.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/yunjiewang/Desktop/CRMApp/Antra.CRMApp.WebMVC/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
